@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customized T-Shirts for all</title>
+    <title>Customized T-Shirts for All</title>
 </head>
-<body style="background-color: #f0f0f0; color: #333;">
-    <h1 style="color: #2c3e50;" align="center">Customized T-Shirts for all :)</h1>
-    <form action="/submit-order" method="post" style="background-color: #fff; padding: 20px; border-radius: 10px;">
-        <fieldset style="border: 2px solid #3498db; padding: 20px;">
-            <legend style="color: #3498db;">T-Shirt Details :</legend>
-            
-            <label for="tagline">Tagline on the Shirt:</label>
-            <input type="text" id="tagline" name="tagline" placeholder="Enter your tagline" required style="margin-bottom: 10px;">
+<body>
+    <h1>Customized T-Shirts for All :)</h1>
+    <form action="/submit-order" method="post">
+        <!-- groups the related elemets in the form -->
+        <fieldset>       
+            <label>Tagline on the Shirt:</label>
+            <input type="text" name="tagline" placeholder="Enter your tagline" required>
             <br><br>
 
-            <label for="color">Color:</label>
-            <select id="color" name="color" required style="margin-bottom: 10px;">
+            <label>Color:</label>
+            <select name="color" required>
                 <option value="">Select a color</option>
                 <option value="white">White</option>
                 <option value="black">Black</option>
@@ -26,8 +25,8 @@
             </select>
             <br><br>
 
-            <label for="size">Size:</label>
-            <select id="size" name="size" required style="margin-bottom: 10px;">
+            <label>Size:</label>
+            <select name="size" required>
                 <option value="">Select a size</option>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
@@ -37,43 +36,42 @@
             </select>
             <br><br>
 
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity" required style="margin-bottom: 10px;">
+            <label>Quantity:</label>
+            <input type="number" name="quantity" placeholder="Enter quantity" min="1" required>
             <br><br>
 
-            <label for="delivery-date">Delivery Date:</label>
-            <input type="date" id="delivery-date" name="delivery-date" required style="margin-bottom: 10px;">
+            <label>Delivery Date:</label>
+            <input type="date" name="delivery-date" required>
         </fieldset>
 
-        <fieldset style="border: 2px solid #3498db; padding: 20px; margin-top: 20px;">
-            <legend style="color: #3498db;">Delivery Details:</legend>
+        <fieldset>
+            <legend>Delivery Details:</legend>
             
-            <label for="name">Recipient's Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter recipient's name" required style="margin-bottom: 10px;">
+            <label>Recipient's Name:</label>
+            <input type="text" name="recipient-name" placeholder="Enter recipient's name" required>
             <br><br>
 
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" placeholder="Enter delivery address" required style="margin-bottom: 10px;">
+            <label>Address:</label>
+            <input type="text" name="address" placeholder="Enter delivery address" required>
             <br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter email address" required style="margin-bottom: 10px;">
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter email address" required>
             <br><br>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter phone number" required style="margin-bottom: 10px;">
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter phone number" required>
         </fieldset>
 
-        <fieldset style="border: 2px solid #3498db; padding: 20px; margin-top: 20px;">
-            <legend style="color: #3498db;">Additional Comments:</legend>
+        <fieldset>
+            <legend>Additional Comments:</legend>
             
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any additional comments or special instructions" style="margin-bottom: 10px;"></textarea>
+            <label>Comments:</label>
+            <textarea name="comments" rows="4" cols="50" placeholder="Any additional comments or special instructions" ></textarea>
         </fieldset>
 
         <br>
-        <button type="submit" style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px;">Submit Order</button>
-        <input type="reset" value="Reset Form" style="background-color: #e74c3c; color: #fff; padding: 10px 20px; border: none; border-radius: 5px;">
+        <button type="submit">Submit Order</button>
     </form>
 </body>
 </html>
